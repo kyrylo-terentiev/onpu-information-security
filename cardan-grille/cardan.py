@@ -87,21 +87,48 @@ def decode(mat, grille, dir):
     return ''.join(phrase)
 
 
+# Read square N*N matrix from console rowwise
+def read_matrix():
+    matrix = []
+    for i in range(N):
+        row = []
+        for j in range(N):
+            row.append(str(input()))
+        matrix.append(row)
+    return matrix
+
+
 def main():
+    print('This program performs encoding and decoding of phrases using Cardan grille algorithm (N=4)')
     # Cardan grille 4*4
     grille = [[1, 1, 0, 1],
               [1, 1, 1, 0],
               [1, 0, 1, 1],
               [0, 1, 1, 1]]
-
     display_matrix(grille, 'Cardan grille:')
-    phrase_to_encode = 'приезжаю шестого'
-    print(f'Phrase to encode: {phrase_to_encode}')
-    result = encode(phrase_to_encode, grille, DEFAULT_DIR)
-    display_matrix(result, 'Encoded matrix:')
-    decoded_phrase = decode(result, grille, DEFAULT_DIR)
-    print(f'Decoded phrase: {decoded_phrase}')
+    print('Enter command: encode | decode')
 
+    cmd = str(input())
+    if cmd != 'encode' and cmd != 'decode':
+        raise ValueError('Accessible commands: encode | decode')
+
+    if cmd == 'encode':
+        print('Enter phrase (length <= 16) to encode:')
+        phrase = str(input())
+        print(f'Phrase to encode: {phrase}')
+
+        result = encode(phrase, grille, DEFAULT_DIR)
+        display_matrix(result, 'Encoded matrix:')
+        print('Encoding succeeded.')
+
+    if cmd == 'decode':
+        print('Enter encoded matrix rowwise:')
+        matrix = read_matrix()
+        display_matrix(matrix, 'Matrix to decode:')
+
+        result = decode(matrix, grille, DEFAULT_DIR)
+        print(f'Decoded phrase: {result}')
+        print('Decoding succeeded.')
 
 
 if __name__ == '__main__':
