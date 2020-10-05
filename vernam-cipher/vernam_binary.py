@@ -61,7 +61,6 @@ def adopt_key_to_message(key, message):
 
 
 def main():
-    print(int(bin(5), 2))
     print("--- This program performs encryption and decryption of the plaintext using Vernam cipher algorithm ---")
     message = input("Enter the message \t\t: ")
     key = input("Enter the key \t\t\t: ")
