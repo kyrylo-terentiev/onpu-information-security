@@ -1,5 +1,10 @@
 import binascii
 
+"""
+Created on Tue Sep 24 02:41:32 2020
+@author: Kyrylo Terentiev
+"""
+
 
 def encrypt(key, message):
     """ Encryption of the message by given key using Vernam algorithm
