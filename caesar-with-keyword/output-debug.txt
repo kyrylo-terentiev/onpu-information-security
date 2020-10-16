@@ -1,0 +1,35 @@
+This program performs encoding and decoding of messages using Caesar cipher with a keyword
+Encoding:
+Enter message to encode: hello world
+Enter a desired key (int from 0 to n-1): 2
+Enter a desired keyword: key
+DEBUG MODE ON
+-------------------------------------------------------------
+Message: hello world
+Key: 2
+Keyword: key
+Old alphabet:  	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+New alphabet:  	['x', 'z', 'k', 'e', 'y', 'a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w']
+Input msg:  	hello world
+Encoded msg: 	cyhhl tlohe
+-------------------------------------------------------------
+Encoded message: cyhhl tlohe
+
+Decoding:
+Enter encoded message to decode: cyhhl tlohe
+Enter a given key (int from 0 to n-1): 2
+Enter a given keyword: key
+ENCODE MODE ON
+-------------------------------------------------------------
+Encoded: cyhhl tlohe
+Key: 2
+Keyword: key
+Old alphabet:  	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+New alphabet:  	['x', 'z', 'k', 'e', 'y', 'a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w']
+Input msg:  	cyhhl tlohe
+Decoded msg: 	hello world
+-------------------------------------------------------------
+Decoded message: hello world
+
+
+Process finished with exit code 0

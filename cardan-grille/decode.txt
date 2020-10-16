@@ -1,0 +1,35 @@
+PS D:\STUDY\ONPU\Технологии защиты информации\onpu-information-security\cardan-grille> python cardan.py
+This program performs encoding and decoding of phrases using Cardan grille algorithm (N=4)
+Cardan grille:
+1       1       0       1
+1       1       1       0
+1       0       1       1
+0       1       1       1
+
+Enter command: encode | decode
+decode
+Enter encoded matrix rowwise:
+з
+т
+п
+
+о
+ж
+ш
+р
+е
+и
+г
+а
+е
+с
+ю
+о
+Matrix to decode:
+з       т       п
+о       ж       ш       р
+е       и       г       а
+е       с       ю       о
+
+Decoded phrase: приезжаю шестого
+Decoding succeeded.

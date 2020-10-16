@@ -1,0 +1,10 @@
+--- This program performs encryption and decryption of the plaintext using Vernam cipher algorithm ---
+Enter the plain text >>> helloworld
+Enter the key (key length >= plaintext length) >>> itwasabrightcolddayandtheclockswerestrikingthirteen
+
+
+Encrypted cipher text >>>  PXHLGWPITJ
+Decrypted plain text >>>  HELLOWORLD
+
+
+Process finished with exit code 0
