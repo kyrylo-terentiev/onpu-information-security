@@ -1,0 +1,10 @@
+---------------------------------------------------------------------
+--- This program performs message signing using ElGamal algorithm ---
+---------------------------------------------------------------------
+p=23, g=5
+Enter value of x (closed key): 9
+Enter value of k: 19
+Enter value of m: 15
+Signed message: m=15, a=7, b=16
+y=11
+valid=True

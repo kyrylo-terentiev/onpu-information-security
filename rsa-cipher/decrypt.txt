@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------
+--- This program performs encryption and decryption using RSA cipher algorithm ---
+----------------------------------------------------------------------------------
+Please enter 'p' and 'q' values below:
+Enter a prime number for p: 11
+Enter a prime number for q: 13
+*****************************************************
+RSA Modulus(n) is: 143
+Eulers Toitent(r) is: 	 120
+*****************************************************
+The value of e is: 	 997
+*****************************************************
+Euclid's algorithm:
+120 = 0*(997) + 120
+997 = 8*(120) + 37
+120 = 3*(37) + 9
+37 = 4*(9) + 1
+End of steps used to achieve Euclid's algorithm
+*****************************************************
+Euclid's extended algorithm:
+1 = 37*(1) + (-4)*(9)
+1 = 120*(-4) + (13)*(37)
+1 = 997*(13) + (-108)*(120)
+s=13.
+End of steps used to achieve value of 'd'.
+The value of d is: 13
+*****************************************************
+Private Key is:  (13, 143)
+Public Key is: 	 (997, 143)
+*****************************************************
+What would you like encrypted or decrypted? (csv for decryption): 19,82,30,82,19,0
+Your message is: 19,82,30,82,19,0
+Type '1' for encryption and '2' for decrytion.2
+Your decrypted message is:  GEREGA
